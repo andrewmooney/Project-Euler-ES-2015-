@@ -24,5 +24,5 @@ const sum = sumArray(arr)
 console.log(sum)
 
 // Functional 1 liner
-let sum = Array.apply(null, Array(1000)).map((x, i) => (i % 3 === 0 || i % 5 === 0) ? i : 0).reduce((total, num) => total + num)
-console.log(sum)
+let fsum = Array.apply(null, Array(1000)).map((x, i) => (i % 3 === 0 || i % 5 === 0) ? i : 0).reduce((total, num) => total + num)
+console.log(fsum)
