@@ -1,14 +1,6 @@
-//function gcd(a, b) {
-//	var t;
-//	while (b !=0) {
-//		t = b;
-//		b = a % b;
-//		a = t;
-//	}
-//	return a;
-//}
+"use strict"
 
-function gcd(a, b) {
+const gcd = (a, b) => {
 	if (b === 0) {
 		return a;
 	} else {
@@ -16,11 +8,11 @@ function gcd(a, b) {
 	}
 }
 
-function lowestMultiple(a, b) {
+const lowestMultiple = (a, b) => {
 	return (a * b / gcd(a, b));
 }
 
-function lowestMultpleArray(arr) {
+const lowestMultpleArray = (arr) => {
 	if(arr.length === 2){
 		return lowestMultiple(arr[0], arr[1]);
 	} else {
@@ -30,7 +22,7 @@ function lowestMultpleArray(arr) {
 	}
 }
 
-function buildArray(num) {
+const buildArray = (num) => {
 	var arr = [];
 	for(var i = 1; i <= num; i++) {
 		arr.push(i);
@@ -39,6 +31,4 @@ function buildArray(num) {
 }
 
 var arr = buildArray(20);
-console.log(arr);
-
 console.log(lowestMultpleArray(arr));
