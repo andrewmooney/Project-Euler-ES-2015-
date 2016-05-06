@@ -12,4 +12,5 @@ Completed
   5. Problem 5
   6. Problem 6
   7. Problem 7
+  7. Problem 8
   10. Problem 10
